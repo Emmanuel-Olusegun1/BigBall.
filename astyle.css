@@ -1,0 +1,277 @@
+/*About US style*/
+.aboutus-section {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between content and image */
+    padding: 40px 20px;
+  }
+  
+  .aboutus-section .content {
+    flex: 1 1 500px; /* Allows flexibility for smaller screens */
+    max-width: 600px; /* Limits the width for better readability */
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  .aboutus-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .aboutus-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+
+  .aboutus-section .image-container {
+    flex: 1 1 400px; /* Allows flexibility for smaller screens */
+    max-width: 500px;
+  }
+  
+  .aboutus-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+
+  /*Mission and Vission style*/
+
+  /* General container for the Mission & Vision section */
+.mission-vision-section {
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling for Mission & Vision */
+  .mission-vision-section .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+
+  
+  /* Cards container to display mission & vision side by side */
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Makes the cards wrap on smaller screens */
+  }
+  
+  /* Card Styling */
+  .card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    min-width: 260px; /* Minimum card width */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Mission Card */
+  .mission-card {
+    border-left: 5px solid #ff6600;
+  }
+  
+  .mission-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Vision Card */
+  .vision-card {
+    border-left: 5px solid #1e90ff;
+  }
+  
+  .vision-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Card Titles */
+  .card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Card Text */
+  .card-text {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column; /* Stack the cards vertically on smaller screens */
+      gap: 20px;
+    }
+  }
+
+  /*Comunity section*/
+
+  
+  /*About US style*/
+.community-section {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between content and image */
+    padding: 40px 20px;
+  }
+  
+  .community-section .content {
+    flex: 1 1 500px; /* Allows flexibility for smaller screens */
+    max-width: 600px; /* Limits the width for better readability */
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  .community-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .community-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+
+  .community-section .image-container {
+    flex: 1 1 400px; /* Allows flexibility for smaller screens */
+    max-width: 500px;
+  }
+  
+  .community-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  button.learn-more {
+    width: 18rem;
+    height: auto;
+   }
+  
+   /* Donation Section Styling */
+.donation-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .donation-section .donation-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .donation-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .donation-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  /* From Uiverse.io by Creatlydev */ 
+.button {
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-decor {
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    z-index: 0;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button__icon {
+    width: 48px;
+    height: 40px;
+    background-color: var(--clr);
+    display: grid;
+    place-items: center;
+  }
+  
+  .button__text {
+    display: inline-block;
+    transition: color .2s;
+    padding: 2px 1.5rem 2px;
+    padding-left: .75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  
+  .button:hover .button__text {
+    color: #fff;
+  }
+  
+  .button:hover .button-decor {
+    transform: translate(0);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .donation-section {
+      padding: 40px 20px;
+    }
+  
+    .donation-section h2 {
+      font-size: 2rem;
+    }
+  
+    .donate-btn {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+    }
+  }
+  
