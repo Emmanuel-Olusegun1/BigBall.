@@ -83,7 +83,6 @@ header {
   width: 250px;
   background-color: #292524;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  overflow-y: auto;
   transition: left 0.3s ease-in-out; /* Transition for left property */
   display: flex;
   flex-direction: column;
@@ -149,9 +148,7 @@ header {
     display: flex; /* Show toggle button on small screens */
   }
 
-  .nav-drawer {
-    display: none; /* Hide nav on small screens */
-  }
+
 }
 
 nav a.active{
