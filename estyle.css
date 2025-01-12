@@ -1,0 +1,57 @@
+.ebooks-section {
+    position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  }
+
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-bar input {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  .ebooks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .ebook-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .ebook-card:hover {
+    transform: scale(1.03);
+  }
+
+  .ebook-card .content {
+    padding: 15px;
+  }
+
+  .ebook-card h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #333;
+  }
+
+  .ebook-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 15px;
+  }
