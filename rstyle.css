@@ -1,0 +1,329 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  /* General Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url("basketball-game-concept.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: orange;
+  }
+  
+  /* Menu Toggle Button */
+  .menu-toggle {
+    display: none; /* Default hidden */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+  }
+  
+  /* Navigation Drawer */
+  .nav-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially hidden off-screen */
+    height: 100%;
+    width: 250px;
+    background-color: #292524;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out; /* Transition for left property */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    z-index: 999;
+  }
+  
+  .nav-drawer.open {
+    left: 0; /* Slide in when "open" class is added */
+  }
+  
+  .nav-drawer .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 15px 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  
+  .nav-links li a:hover {
+    color: orange;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none; /* Hide toggle button on large screens */
+    }
+  
+    .nav-drawer {
+      position: static;
+      display: flex; /* Show nav on large screens */
+      flex-direction: row;
+      justify-content: flex-end;
+      background: none;
+      box-shadow: none;
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .nav-links li {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .menu-toggle {
+      display: flex; /* Show toggle button on small screens */
+    }
+  
+    .nav-drawer {
+      display: none; /* Hide nav on small screens */
+    }
+  }
+  
+  nav a.active{
+      padding: .4rem;
+      border-radius: .3rem;
+      color: orange;
+  }
+  
+  
+  /* History Page */
+  .history-page {
+    padding: 40px 20px;
+    background-color: white;
+  }
+  
+  .history-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .history-page .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .history-page .intro {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  .history-content {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+  }
+  
+  .history-content p {
+    margin-bottom: 20px;
+  }
+  
+  .title{
+    font-weight:700;
+  }
+  /* Footer Styles */
+.footer {
+    background-color: #3a025b; /* Orange color */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .quick-links, .subscription-form {
+    width: 30%;
+  }
+  
+  .quick-links h3, .subscription-form h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .quick-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .quick-links ul li a:hover {
+    color: #FBBF24; /* Lighter yellow on hover */
+  }
+  
+/* From Uiverse.io by vinodjangid07 */ 
+.input-wrapper {
+    width: fit-content;
+    height: 45px;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    background-color: #292524;
+  }
+  
+  .icon {
+    width: 30px;
+    fill: rgb(255, 255, 255);
+    margin-left: 8px;
+    transition: all 0.3s;
+  }
+  .input {
+    max-width: 170px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    background-color: #292524;
+    color: white;
+    font-size: 1em;
+  }
+  .input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+    -webkit-text-fill-color: #ffffff;
+  }
+  .Subscribe-btn {
+    height: 100%;
+    width: 95px;
+    border: none;
+    border-radius: 15px;
+    color:white;
+    cursor: pointer;
+    background-color: orange;
+    font-weight: 500;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .arrow {
+    /* display: none; */
+    position: absolute;
+    margin-right: 150px;
+    transition: all 0.3s;
+  }
+  .input-wrapper:active .icon {
+    transform: scale(1.3);
+  }
+  .Subscribe-btn:hover {
+    color: orange;
+  }
+  .Subscribe-btn:hover .arrow {
+    margin-right: 0;
+    animation: jello-vertical 0.9s both;
+    transform-origin: right;
+  }
+  
+  @keyframes jello-vertical {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  .Subscribe-btn:active {
+    transform: scale(0.9);
+  }
+  
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quick-links, .subscription-form {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
